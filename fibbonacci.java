@@ -7,18 +7,21 @@ public class fibbonacci {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of terms");
         int n = scanner.nextInt();
+        int f2=Fibonacci(n);
+        System.out.println(f2);
+    }
+    public static int Fibonacci(int n)
+    {
         int f0=0;
         int f1=1;
-        System.out.println(f0);
-        System.out.println(f1);
+        int f2=0;
         for(int i=0;i<n;i++)
         {
-            int f2=f0+f1;
-            System.out.println(f2);
+            f2=f0+f1;
             f0=f1;
             f1=f2;
         }
-
+        return f2;
     }
     
 }
