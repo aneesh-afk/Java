@@ -16,7 +16,7 @@ public class Binary_Search {
         System.out.println("Enter element to be searched");
         int x=scanner.nextInt();
         int index=Binary(arr,n,x);
-        System.out.println(index);
+        System.out.println("Element found at index " + index);
     }
     public static int Binary(int[] arr,int n,int x)
     {
